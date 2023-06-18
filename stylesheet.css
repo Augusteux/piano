@@ -1,0 +1,157 @@
+html {
+    height: 100%;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+  .card-slider {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .card img {
+    width: 720px;
+    height: 250px;
+  }
+  
+  .slider-prev,
+  .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: gray;
+    color: aquamarine;
+    cursor: pointer;
+  }
+  
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    width: 100vw;
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #32E0C4, #0D7377);
+}
+
+.piano {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+}
+
+.wh {
+    background-image: linear-gradient(to bottom, rgba(223, 211, 211, 0.812), white);
+    width: 80px;
+    height: 285px;
+    border: 4px solid black;
+    border-radius: 0 0 6px 6px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bl {
+    background-image: linear-gradient(to bottom, black, gray);
+    position: absolute;
+    width: 50px;
+    height: 170px;
+    border: 3px solid black;
+    border-radius: 0 0 4px 4px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #EEEEEE;
+    background-image: linear-gradient(45deg, #F09E4A, #BFE65A);
+}
+
+.k-2 {
+    left: 53px;
+}
+
+.k-3 {
+    left: 138px;
+}
+
+.k-5 {
+    left: 306px;
+}
+
+.k-6 {
+    left: 391px;
+}
+
+.k-7 {
+    left: 474px;
+}
+
+.k-9 {
+    left: 641px;
+}
+
+.k-0 {
+    left: 728px;
+}
+
+@media (max-width: 600px) {
+    .element {
+      /* Scale down size */
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .element {
+      /* Scale down size further */
+      width: 30%;
+      height: 30%;
+    }
+  }
